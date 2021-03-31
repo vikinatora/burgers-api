@@ -1,6 +1,6 @@
 # burgers-api
 
-##Prerequisites
+## Prerequisites
 1. Installed Node.js
 2. Installed MongoDB
 
