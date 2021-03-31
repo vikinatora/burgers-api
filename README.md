@@ -16,5 +16,5 @@
    ```
 4. Run in dev mode
  ```sh
-   npm run seed
+   npm run dev
    ```
