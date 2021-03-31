@@ -1,5 +1,6 @@
 import { msToHours } from "./helpers";
 
+export const PORT = 3000;
 export const REQUESTS_RATE_LIMIT = 2;
 export const RESULTS_PER_PAGE = 25;
 export const RETRIES_COUNT = 10;
