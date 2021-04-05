@@ -14,19 +14,19 @@ class App {
 
   constructor() {
     this.app = express();
-    this.routes.routes(this.app);
     this.config();
     this.mongoSetup();
     
   }
 
   private config(): void {
+    this.app.use(limitRate);
+    this.routes.routes(this.app);
     this.app.use(useCors());
     this.app.use(express.json());
     this.app.use(express.urlencoded({
       extended: true,
     }));
-    this.app.use(limitRate);
   }
 
   private async mongoSetup (): Promise<void> {
